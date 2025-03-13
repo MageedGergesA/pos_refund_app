@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restrict POS Refund with Password</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f5f5f5;
+            color: #282F33;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #714B67;
+            padding: 15px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .header h1 {
+            font-size: 50px;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+        .header p {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border-bottom: 2px solid #714B67;
+        }
+        .navigation a {
+            text-decoration: none;
+            color: #714B67;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #714B67;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .screenshots img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        .footer {
+            background-color: #714B67;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Restrict POS Refund with Password</h1>
+    <p>Secure your POS refunds with password protection globally or session-wise.</p>
+    <!--        <img src="./assets/screenshots/hero.gif" alt="Module Demo" width="100%" height="auto">-->
+</div>
+
+<div class="navigation">
+    <a href="#overview">Overview</a>
+    <a href="#features">Features</a>
+    <a href="#screenshots">Screenshots</a>
+</div>
+
+<div class="content">
+    <div id="overview">
+        <h2>Overview</h2>
+        <p>
+            This module enhances the Point of Sale (POS) refund process by introducing password protection for refunds.
+            It offers two distinct options for managing refunds:
+        </p>
+        <ul>
+            <li><strong>Employee Password Protection:</strong> Employees must enter a designated password to process
+                refunds. If the password is invalid, a pop-up will display an error message. If correct, the refund is
+                processed.
+            </li>
+            <li><strong>Global Refund Setting:</strong> In the POS settings, you can enable or disable global refund
+                permissions. If enabled, refunds can be processed without a password. If disabled, employees must enter
+                the password to proceed with refunds, and the password pop-up will appear.
+            </li>
+        </ul>
+    </div>
+
+    <div id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Supports Odoo Community and Enterprise Editions.</li>
+            <li>Session-wise password protection for refunds.</li>
+            <li>Global password protection for refunds across all POS sessions.</li>
+            <li>Error handling for invalid password entries.</li>
+            <li>Flexible refund settings to toggle global refund permissions.</li>
+        </ul>
+    </div>
+    <div id="screenshots" class="screenshots">
+        <h2>Screenshots</h2>
+
+        <!-- Image 1: Global Refund Settings -->
+        <div class="screenshot-item">
+            <img src="assets/screenshots/global_refund_settings.png" alt="Enable or Disable Password Protection in POS"
+                 style="max-width: 60%; height: auto;">
+            <p class="caption" style="font-size: 20px;"><strong>Global Refund Settings:</strong> Enable or disable
+                password protection for refunds in the POS settings. Choose between global or session-wise password
+                requirements.</p>
+        </div>
+
+        <!-- Image 2: Password Entry Setup -->
+        <div class="screenshot-item">
+            <img src="assets/screenshots/passw_entry.png" alt="Add Employee Password for POS Refund"
+                 style="max-width: 60%; height: auto;">
+            <p class="caption" style="font-size: 20px;"><strong>Set Employee Password:</strong> Assign a password for
+                employees to use during the refund process. This ensures only authorized personnel can process refunds.
+            </p>
+        </div>
+
+        <!-- Image 3: Invalid Password Entry -->
+        <div class="screenshot-item">
+            <img src="assets/screenshots/invalid_string.png" alt="Invalid Employee Password Entry for POS Refund"
+                 style="max-width: 60%; height: auto;">
+            <p class="caption" style="font-size: 20px;"><strong>Invalid Password Entry:</strong> If an employee enters
+                an invalid password, the system will prevent the refund process and display an error message.</p>
+        </div>
+
+        <!-- Image 4: Password Entry Popup -->
+        <div class="screenshot-item">
+            <img src="assets/screenshots/enter_refund_password.png" alt="POS Refund Employee Password Entry"
+                 style="max-width: 60%; height: auto;">
+            <p class="caption" style="font-size: 20px;"><strong>Password Entry Popup:</strong> When initiating a refund,
+                employees are prompted to enter the designated password to proceed.</p>
+        </div>
+
+        <!-- Image 5: Successful Refund -->
+        <div class="screenshot-item">
+            <img src="assets/screenshots/success_refund.png" alt="POS Refund Employee Password Entry Success"
+                 style="max-width: 60%; height: auto;">
+            <p class="caption" style="font-size: 20px;"><strong>Successful Refund:</strong> Upon entering the correct
+                password, the refund is processed successfully, and the system confirms the completion.</p>
+        </div>
+
+        <!-- Image 6: Wrong Password Entry -->
+        <div class="screenshot-item">
+            <img src="assets/screenshots/wrong_password.png" alt="Wrong Refund Password Entry"
+                 style="max-width: 60%; height: auto;">
+            <p class="caption" style="font-size: 20px;"><strong>Wrong Password Entry:</strong> If an incorrect password
+                is entered, the system will not proceed with the refund and will prompt the user to try again.</p>
+        </div>
+
+        <!-- Image 7: Invalid Password Popup -->
+        <div class="screenshot-item">
+            <img src="assets/screenshots/invalid_password_popup.png" alt="Invalid Refund Password Entry PopUp"
+                 style="max-width: 60%; height: auto;">
+            <p class="caption" style="font-size: 20px;"><strong>Invalid Password Popup:</strong> A clear error message
+                is displayed when an invalid password is entered, ensuring employees are aware of the issue.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>For support or inquiries, please contact our team.</p>
+    </div>
+</body>
+</html>
