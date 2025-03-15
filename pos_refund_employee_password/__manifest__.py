@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Restrict POS Employee Refund With Password',
+    'name': 'Restrict POS Refund With Password For Employees',
     'version': '15.0.1.0.0',
     'category': 'Point of Sale',
     'summary': """SecureRefund: Safeguarding POS Transactions""",
